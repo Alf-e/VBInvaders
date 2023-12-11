@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>defaultICON.ico</ApplicationIcon>
+    <AssemblyName>VBInvaders</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SourceImages\Alien1a.png" />
+    <None Remove="SourceImages\Alien1b.png" />
+    <None Remove="SourceImages\Alien2a.png" />
+    <None Remove="SourceImages\Alien2b.png" />
+    <None Remove="SourceImages\Alien3a.png" />
+    <None Remove="SourceImages\Alien3b.png" />
+    <None Remove="SourceImages\Defender.png" />
+    <None Remove="SourceImages\ExplosionF1.png" />
+    <None Remove="SourceImages\ExplosionF2.png" />
+    <None Remove="SourceImages\ExplosionF3.png" />
+    <None Remove="SourceImages\ExplosionF4.png" />
+    <None Remove="SourceImages\ExplosionF5.png" />
+    <None Remove="SourceImages\ExplosionF6.png" />
+    <None Remove="SourceImages\ExplosionF7.png" />
+    <None Remove="SourceImages\ProjectileA.png" />
+    <None Remove="SourceImages\ProjectileB.png" />
+    <None Remove="SourceSounds\bosshitnoise.wav" />
+    <None Remove="SourceSounds\explosion.wav" />
+    <None Remove="SourceSounds\fastinvader1.wav" />
+    <None Remove="SourceSounds\invaderkilled.wav" />
+    <None Remove="SourceSounds\shoot.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="defaultICON.ico" />
+    <Content Include="SourceImages\Alien1a.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\Alien1b.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\Alien2a.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\Alien2b.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\Alien3a.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\Alien3b.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\Defender.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ExplosionF7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ProjectileA.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceImages\ProjectileB.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceSounds\bosshitnoise.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SourceSounds\explosion.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceSounds\fastinvader1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceSounds\invaderkilled.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SourceSounds\shoot.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
